@@ -2,18 +2,18 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Calvin",
+  lastName: "Waldheim",
+  name: `Calvin Waldheim`,
+  role: "Product Manager",
+  avatar: "/images/avatar.jpeg",
+  email: "calvin.waldheim@gmail.com",
+  location: "Europe/Amsterdam", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English (C2)", "German (Native)","Dutch (B1)"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -24,17 +24,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/calvinwaldheim",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://linkedin.com/in/calvin-waldheim",
   },
   {
     name: "Email",
@@ -49,30 +44,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Product Manager</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Recent work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Vision‑to‑execution PM for complex B2B systems—platform consolidation, PMOps, and AI‑assisted workflows.
+      <br /> I turn abstract ideas into shippable strategy for IoT and platform products—pragmatic, value‑driven, no theater.
     </>
   ),
 };
@@ -81,7 +70,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Amsterdam with 8+ years experience in IoT, platform strategy, and PMOps`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -91,16 +80,19 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendar.app.google/2Dt9mWKhMhx6YRz79",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I turn ambiguous problems into clear strategies and shipped outcomes. I've led a 5→1 platform 
+        consolidation over three years, scaled monitoring 10–100× across 500 enterprise accounts, and 
+        rolled out Jira Align + Jira Product Discovery.
+        <br /><br />
+         I'm a team‑first builder and strong presenter 
+        who avoids innovation theater and focuses on work that matters.
       </>
     ),
   },
@@ -109,41 +101,90 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "ERIKS Digital & ERIKS N.V.",
+        timeframe: "Aug 2021 – Mar 2025",
+        role: "Product Manager, IoT & Asset Management",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Defined and executed a 3-year IoT strategy consolidating 5 legacy platforms into one, 
+            migrating strategic customers and reducing platform costs to target levels.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Increased asset monitoring coverage 10–100x for 500+ top customers by implementing 
+            scalable QR code asset tracking programs.
+          </>,
+          <>
+            Launched 2 highly technical IoT features: system status dashboards and advanced 
+            industrial pump failure analysis for customer portals.
+          </>,
+          <>
+            Drove PMOps maturity by rolling out Jira Align & Jira Product Discovery, coaching 
+            PMs on customer discovery practices.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "ERIKS Digital & ERIKS N.V.",
+        timeframe: "Sept 2019 – Aug 2021",
+        role: "Product Manager, ERIKS Wiki & Knowledge Platform",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Co-created and led development of ERIKS Wiki — a 360° graph-based product catalog 
+            integrating 1.5M+ SKUs into a unified product database for the first time.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Designed graph-based data architecture connecting products, specifications, 
+            applications, and supplier relationships in a searchable knowledge platform.
+          </>,
+          <>
+            Managed cross-functional team including data engineers, UX designers, and domain 
+            experts to transform fragmented product data into unified customer experience.
+          </>,
+          <>
+            Established data governance processes and product taxonomy standards used 
+            across all ERIKS digital products.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "ERIKS Digital & ERIKS N.V.",
+        timeframe: "Sept 2018 – Sept 2019",
+        role: "Digital Innovation Manager",
+        achievements: [
+          <>
+            Rolled out ERIKS' Edison Innovation Framework across Europe and Asia-Pacific; 
+            owned global reporting for innovation pipeline to the ERIKS Board.
+          </>,
+          <>
+            Drove ideation-to-scale of digital products, supporting spin-offs and market launches.
+          </>,
+          <>
+            Hosted and led supplier innovation competition, piloting cutting-edge projects such as 
+            AI-driven knowledge extraction from customer emails.
+          </>,
+          <>
+            Established innovation processes and metrics that became standard across ERIKS' 
+            global digital transformation initiatives.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "ERIKS (Corporate Startup Zamro)",
+        timeframe: "Sept 2017 – Sept 2018",
+        role: "Performance Marketer",
+        achievements: [
+          <>
+            Managed €1M+ digital ad budget across 5M+ ad creatives covering 1M SKUs.
+          </>,
+          <>
+            Built highly automated, data-driven performance marketing stack across Google, 
+            Amazon, Affiliate & Social platforms.
+          </>,
+          <>
+            Delivered scalable acquisition infrastructure for B2B eCommerce.
           </>,
         ],
         images: [],
@@ -152,78 +193,118 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Amsterdam School of International Business & Bilgi University, Istanbul",
+        description: <>B.B.A. in International Business and Management Studies (Aug 2013 – Jun 2017). Focus: Financial Management, Real Estate Finance, Venture Capital.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Skills & Expertise",
     skills: [
       {
-        title: "Figma",
+        title: "Product Management & Strategy",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Vision → strategy → roadmap execution, discovery practices, prioritization & trade-offs, cross-functional leadership, and enterprise migrations & change management.</>
+        ),
+        tags: [
+          {
+            name: "Product Strategy",
+            icon: "star",
+          },
+          {
+            name: "Discovery",
+            icon: "search",
+          },
+          {
+            name: "Roadmapping",
+            icon: "map",
+          },
+          {
+            name: "Stakeholder Mgmt",
+            icon: "users",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "PMOps & Atlassian Ecosystem",
+        description: (
+          <>Jira Align portfolio planning, Jira Product Discovery for ideation & evidence, discovery coaching, async communication, and AI governance across product/data/platform teams.</>
+        ),
+        tags: [
+          {
+            name: "Jira Align",
+            icon: "grid",
+          },
+          {
+            name: "Jira Product Discovery",
+            icon: "lightbulb",
+          },
+          {
+            name: "PMOps",
+            icon: "cog",
+          },
+          {
+            name: "Confluence",
+            icon: "document",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "IoT & Platform Engineering",
+        description: (
+          <>Industrial IoT systems, asset management platforms, system consolidation, monitoring & analytics, and collaboration with engineering/data teams on technical products.</>
+        ),
+        tags: [
+          {
+            name: "IoT Platforms",
+            icon: "chip",
+          },
+          {
+            name: "Asset Management",
+            icon: "package",
+          },
+          {
+            name: "Platform Consolidation",
+            icon: "layers",
+          },
+          {
+            name: "System Integration",
+            icon: "link",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Tools & Technologies",
+        description: (
+          <>Figma, Miro, Cursor AI, LLMs, low-code development, React basics, Firebase, Swift prototyping, and performance marketing automation.</>
         ),
         tags: [
           {
             name: "Figma",
             icon: "figma",
           },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "React",
+            icon: "react",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "AI/LLMs",
+            icon: "ai",
+          },
+          {
+            name: "Swift",
+            icon: "swift",
           },
         ],
+        images: [],
       },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },  
     ],
   },
 };
@@ -231,7 +312,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Thoughts on product and technology",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -241,8 +322,8 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  description: `Product and development projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /home and /work routes
 };
 
@@ -251,50 +332,39 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  // Add your own images here
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      src: "/images/projects/project-productops/cover.jpeg",
+      alt: "Jira Align",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "/images/gallery/IMG_0597.jpg",
+      alt: "SAM",
       orientation: "horizontal",
     },
+    
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "/images/gallery/IMG_0599.jpg",
+      alt: "SAM",
       orientation: "horizontal",
     },
+    
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      src: "/images/gallery/sam.mp4",
+      alt: "SAM",
       orientation: "vertical",
+    },
+    
+    {
+      src: "/images/gallery/IMG_0619.jpg",
+      alt: "SAM",
+      orientation: "horizontal",
     },
   ],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
+
+
