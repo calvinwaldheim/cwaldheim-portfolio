@@ -79,16 +79,17 @@ export default function About() {
       )}
       <Row fillWidth s={{ direction: "column" }} horizontal="center">
         {about.avatar.display && (
-          <Column
-            className={styles.avatar}
-            position="sticky"
-            minWidth="160"
-            paddingX="l"
-            paddingBottom="xl"
-            gap="m"
-            flex={3}
-            horizontal="center"
-          >
+                  <Column
+          className={styles.avatar}
+          position="sticky"
+          minWidth="160"
+          paddingX="l"
+          paddingBottom="xl"
+          gap="m"
+          flex={3}
+          horizontal="center"
+          s={{ position: "relative", paddingX: "s", paddingBottom: "m", flex: 1 }}
+        >
             <Avatar src={person.avatar} size="xl" />
             <Row gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
@@ -105,7 +106,7 @@ export default function About() {
             )}
           </Column>
         )}
-        <Column className={styles.blockAlign} flex={9} maxWidth={40}>
+        <Column className={styles.blockAlign} flex={9} maxWidth={40} s={{ flex: 1, maxWidth: "none" }}>
           <Column
             id={about.intro.title}
             fillWidth

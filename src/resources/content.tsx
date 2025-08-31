@@ -340,13 +340,13 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/IMG_0597.jpg",
+      src: "/images/gallery/IMG_0597.JPG",
       alt: "SAM",
       orientation: "horizontal",
     },
     
     {
-      src: "/images/gallery/IMG_0599.jpg",
+      src: "/images/gallery/IMG_0599.JPG",
       alt: "SAM",
       orientation: "horizontal",
     },
@@ -358,7 +358,7 @@ const gallery: Gallery = {
     },
     
     {
-      src: "/images/gallery/IMG_0619.jpg",
+      src: "/images/gallery/IMG_0619.JPG",
       alt: "SAM",
       orientation: "horizontal",
     },
