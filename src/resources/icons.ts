@@ -12,6 +12,20 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
+  HiOutlineStar,
+  HiOutlineMagnifyingGlass,
+  HiOutlineMap,
+  HiOutlineUsers,
+  HiOutlineLightBulb,
+  HiOutlineCog8Tooth,
+  HiOutlineCpuChip,
+  HiOutlineCube,
+  HiOutlineSquare3Stack3D,
+  HiOutlineLink as HiOutlineLinkChain,
+  HiOutlineDevicePhoneMobile,
+  HiOutlineCircleStack,
+  HiOutlineCodeBracket,
+  HiOutlineComputerDesktop,
 } from "react-icons/hi2";
 
 import {
@@ -57,6 +71,20 @@ export const iconLibrary: Record<string, IconType> = {
   nextjs: SiNextdotjs,
   supabase: SiSupabase,
   figma: SiFigma,
+  // Skill badge icons
+  star: HiOutlineStar,
+  search: HiOutlineMagnifyingGlass,
+  map: HiOutlineMap,
+  users: HiOutlineUsers,
+  lightbulb: HiOutlineLightBulb,
+  cog: HiOutlineCog8Tooth,
+  chip: HiOutlineCpuChip,
+  package: HiOutlineCube,
+  layers: HiOutlineSquare3Stack3D,
+  link: HiOutlineLinkChain,
+  react: HiOutlineCodeBracket,
+  ai: HiOutlineCircleStack,
+  swift: HiOutlineDevicePhoneMobile,
 };
 
 export type IconLibrary = typeof iconLibrary;

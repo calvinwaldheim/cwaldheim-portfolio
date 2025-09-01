@@ -196,8 +196,12 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "Amsterdam School of International Business & Bilgi University, Istanbul",
-        description: <>B.B.A. in International Business and Management Studies (Aug 2013 – Jun 2017). Focus: Financial Management, Real Estate Finance, Venture Capital.</>,
+        name: "Amsterdam School of International Business, Amsterdam",
+        description: <>B.B.A. in International Business & Management Studies (Aug 2013 – Jun 2017). Focus: Financial Management, Real Estate Finance, Venture Capital.</>,
+      },
+      {
+        name: "Bilgi University, Istanbul",
+        description: <>Exchange Semester, International Business & Management (2016). Enhanced global perspective through immersive study abroad experience.</>,
       },
     ],
   },
