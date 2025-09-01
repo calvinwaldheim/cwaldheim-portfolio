@@ -339,11 +339,6 @@ const gallery: Gallery = {
   // Add your own images here
   images: [
     {
-      src: "/images/projects/project-productops/cover.jpeg",
-      alt: "Jira Align",
-      orientation: "horizontal",
-    },
-    {
       src: "/images/gallery/IMG_0597.JPG",
       alt: "SAM",
       orientation: "horizontal",
@@ -364,7 +359,7 @@ const gallery: Gallery = {
     {
       src: "/images/gallery/IMG_0619.JPG",
       alt: "SAM",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
   ],
 };
