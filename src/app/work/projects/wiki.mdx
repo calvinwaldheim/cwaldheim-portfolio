@@ -10,26 +10,36 @@ author: "Calvin Waldheim"
 otherInfo: "ERIKS Digital & ERIKS N.V. • 2019–2022"
 ---
 
-## WIKI: Graph-Based Product 360 Catalog – ERIKS Digital
+## WIKI: Graph-Based Product 360 Catalog — ERIKS Digital
 
-Before WIKI, ERIKS’ product data landscape was fragmented. Each country ran its own e-commerce catalog, ERP article data was difficult to search, and additional product information sat in spreadsheets or local systems. Finding reliable data across 1.5M SKUs was slow, inconsistent, and frustrating for sales teams, product managers, and engineers alike.  
+Before WIKI, ERIKS’ product-data landscape was scattered across dozens of systems. Each country ran its own e-commerce catalog; ERP article data was inconsistent and nearly impossible to search; supplemental information lived in local spreadsheets. Finding reliable details across 1.5 million SKUs was slow, error-prone, and frustrating for sales, engineering, and product teams alike.
 
-WIKI was created as an **innovation spin-off** to tackle this problem: a single internal catalog that unified all ERIKS product data into one searchable, contextual platform. At its core, WIKI combined:  
-- **Neo4j** to model relationships between products and specifications.  
-- **Elasticsearch** to deliver high-performance, multilingual search at scale.  
+WIKI was conceived as a focused innovation spin-off to fix this: a single internal catalog that unified all ERIKS product data into one context-aware, searchable platform.
 
-Together, these technologies allowed ERIKS to not only consolidate data but also enrich it with business logic, surfacing smarter recommendations and product connections.  
+At its core, WIKI combined:
 
-### My role
-When the initial Product Manager left, I took ownership of WIKI and steered it from prototype to global rollout:  
-- **Global adoption:** Expanded WIKI to all ERIKS countries and languages, ensuring consistency across regions.  
-- **Cross-sell graph logic:** Implemented nodes that encoded product specialists’ knowledge—e.g., surfacing alternatives, replacements, or compatible products like seals and couplings.  
-- **User growth:** Scaled usage to 900–1,000 active internal users across sales, account management, product management, and engineering.  
-- **Strategic alignment:** Ensured the tool wasn’t just a catalog, but a productivity driver—shortening time to information, improving quote accuracy, and embedding expert knowledge into the system.  
+- Neo4j — modeling product-to-specification relationships as a graph database.
+- Elasticsearch — powering multilingual, high-performance search across the global product universe.
 
-### Outcome
-WIKI became the **single source of truth** for ERIKS’ product data, giving teams instant access to the entire catalog of 1.5M SKUs in one place. By capturing cross-selling and compatibility logic inside the graph, it also turned tribal knowledge into a scalable, reusable asset.  
+A purpose-built ETL pipeline transformed relational ERP and PIM data into graph relationships, then replicated those nodes and edges into ElasticSearch indices. Over time, the pipelines were optimized to handle delta updates instead of full reloads—enabling daily refresh cycles and dramatically improving reliability and performance.
 
-Perhaps most importantly, WIKI served as a **learning ground for ERIKS’ digital commerce strategy**: the architecture and best practices developed here informed how ERIKS later built scalable product search into its e-commerce platforms.  
+### My Role
 
-WIKI proved that complex product ecosystems can be transformed into usable, business-driving tools—bridging the gap between data, technology, and commercial value.
+![Graph relationships visualization](/images/projects/project-wiki/image-01.png)
+
+When the initial Product Manager departed, I took ownership of WIKI and led it from prototype to enterprise rollout:
+
+- Scaled globally: Extended the platform to every ERIKS region and language, establishing a consistent, unified data model.
+- Embedded intelligence: Encoded product-specialist knowledge directly into the graph, surfacing alternatives, compatible items, and replacements through relationship-based cross-sell logic.
+- Expanded adoption: Grew usage to 900 – 1,000 active internal users across sales, account management, product management, and engineering.
+- Aligned to business outcomes: Repositioned WIKI from a static catalog into a productivity and insight platform—accelerating quote generation, improving data accuracy, and capturing expert knowledge as reusable data assets.
+
+### Impact
+
+![WIKI product demo video thumbnail](/images/projects/project-wiki/video.mp4)
+
+WIKI became ERIKS’ single source of truth for product information—integrating more than 1.5 million SKUs into one search and recommendation layer. By combining graph-based relationships with distributed search indexing, the platform transformed disconnected data into actionable intelligence, turning tribal expertise into structured, queryable knowledge.
+
+Beyond its immediate value, WIKI also served as a technical blueprint for ERIKS’ later e-commerce and data-platform architecture. The ETL patterns, schema models, and indexing principles established here became the foundation for scalable product search across ERIKS’ digital ecosystem.
+
+WIKI proved that even the most complex industrial product catalog can be reimagined as a living knowledge graph—bridging data, technology, and commercial value.
